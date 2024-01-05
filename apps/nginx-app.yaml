@@ -15,8 +15,8 @@ spec:
     repoURL: https://github.com/shukerski/argocd-nginx-app
     targetRevision: HEAD
   syncPolicy:
-#    automated:
-#      prune: true
-#      selfHeal: true
+    automated:
+      prune: true
+      selfHeal: true
     syncOptions:
       - CreateNamespace=true
